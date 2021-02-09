@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(home: RealCard()));
@@ -20,6 +18,16 @@ class RealCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Center(
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/ninja.jpg'),
+                  radius: 45.0,
+                ),
+              ),
+              Divider(
+                height: 60.0,
+                color: Colors.grey[400],
+              ),
               Text('NAME',
                   style: TextStyle(color: Colors.grey, letterSpacing: 2.0)),
               SizedBox(
