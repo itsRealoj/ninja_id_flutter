@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(home: RealCard()));
@@ -52,6 +54,15 @@ class RealCard extends StatelessWidget {
                   Icon(
                     Icons.email,
                     color: Colors.grey[400],
+                  ),
+                  SizedBox(width: 5,),
+                  Text(
+                    'realninja@gmail.com',
+                    style: TextStyle(
+                      color: Colors.grey[400],
+                      fontSize: 19.0,
+                      letterSpacing: 1.5,
+                    ),
                   ),
                 ],
               ),
